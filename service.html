@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="http-equiv" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Dog Grooming And Sitting Service">
+        <meta name="keywords" content="Dogs, Dog Grooming, Dog Sitting">
+        <meta name="author" content="Tumy">
+        <title>Dog Grooming And Sitting Service</title>
+        <link  rel="stylesheet" href="Styles/style.css">
+        <script src="Scripts/script.js"></script>
+    </head>
+    <body onload="setMinDate()">
+        <header>
+            <div id="container">
+                <div id="branding">
+                    <h1>
+                        <span class="highlight">Tumy's</span> Dog Grooming, Vaccinations And Sitting
+                    </h1>
+                </div>
+                    <nav>
+                        <ul>
+                            <li ><a href="index.html">Home</a></li>
+                            <li ><a href="about.html">About</a></li>
+                            <li class="current"><a href="service.html">Services</a></li>
+                        </ul>
+                    </nav>
+                
+            </div>
+        </header>  
+        <section id="newsletter">
+            <div class="container">
+                <h1> Subscribe To Our Community Newsletter</h1>
+                <form name="news" action="#" target="self" method="POST">
+                    <input type="email" id="txtNewsEmail" placeholder = "Enter Email..." ></input>
+                    <button type="submit" class="button_1" onclick="validateNewsEmail()">Subscribe</button>
+                </form>
+            </div>
+        </section>  
+
+        <section id="main">
+            <div class="container">
+                <aside id="sidebar">
+                    <div class="dark">
+                        <h3>Book A Service</h3>
+                            <form class="booking" name="booking" action="#" target="self" method="POST">
+                                    <div>
+                                        <label>Name</label><br>
+                                        <input type="text" id="txtName" placeholder="Name" >
+                                    </div>
+                                    <div>
+                                        <label>Phone</label><br>
+                                        <input type="text" id="txtPhone"  maxlength="12" placeholder="Phone"  >                                
+                                    </div>
+                                    <div>
+                                        <label>Email</label><br>
+                                        <input type="email" id="txtEmail" placeholder="Email" required>                                
+                                    </div>
+                                    <div>
+                                            <label>Message</label><br>
+                                            <textarea type="text"  id="txtMesage" placeholder="Message"></textarea>
+                                    </div>
+                                    <div>
+                                            <label>Service</label><br>
+                                            <select id="drpSevice">
+                                                <option value="grooming" selected>Grooming</option>
+                                                <option value="vaccination">Vaccination</option>
+                                                <option value="sitting">Sitting</option>
+                                            </select>                               
+                                    </div>
+                                    <div>
+                                            <label>Date From</label><br>
+                                            <input type="date" id="dtDateFrom" required >                            
+                                    </div>
+                                    <div>
+                                            <label>Date To</label><br>
+                                            <input type="date" id="dtDateTo" required >                            
+                                    </div>
+                                    <button class="button_1" type="submit" onclick="ValidateForm()">Send</button>
+                                    <button class="button_1" type="reset" onclick="setMinDate()">Reset</button>
+
+                            </form>
+                    </div>
+                </aside>
+
+                <article id="main-col">
+                        <h1 class="page-title">Services</h1>
+                        <ul id="services">
+                            <li>
+                                <h3>Dog Grooming Service</h3>
+                                <p>Full grooming service in a mobile van.</p>
+                                <p>Pricing:R500</p>
+                            </li>
+                            <li>
+                                <h3>Dog Full Vaccination Service</h3>
+                                <p>Dog collection, Vet visit, vaccination and bringing back home</p>
+                                <p>Pricing:R2,500</p>
+                            </li>
+                            <li>
+                                <h3>Dog Sitting Service</h3>
+                                <p>Dog sitting offsite</p>
+                                <p>Pricing:R250 per day</p>
+                            </li>
+                        </ul>
+                   </article>
+            </div>
+        </section>        
+        <footer>
+            <p>Tumy's Dog Grooming, Vaccinations And Sitting Service &copy; 2018</p>
+        </footer>
+    </body>
+
+</html>

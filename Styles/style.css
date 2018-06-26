@@ -1,0 +1,261 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    background-color: #b2a6a6;
+    font-size:15px;
+    line-height: 1.5;
+}
+
+/* Global */
+.container{
+    widows: 80%;
+    margin:auto;
+    overflow: hidden;  /*Anything going over an element height must be hidden*/   
+
+}
+
+.dark{
+    padding: 15px;
+    background: #381415;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul{
+    padding:0;
+    margin:0;
+}
+
+.button_1{
+    height:40px;
+    background-color: #d8171b;
+    border:0;
+    padding-left:20px;
+    padding-right: 20px;
+    color:#ffffff;
+}
+
+
+/* Header */
+header{
+    background-color:#381415;
+    color: #ffffff;
+    padding-top: 38px;
+    min-height: 70px;
+    border-bottom: #d8171b 5px double;  
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float:left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top:10px;
+}
+
+header .highlight, header .current a{
+    color: #d8171b;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#b2a6a6;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 400px;
+    background: url('../Images/showcase.jpg') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top:100px;
+    font-size:50px;
+    margin-bottom:50px;
+}
+
+#showcase p{
+    font-size:20px;
+    color: #d8171b;
+    font-weight: bold;
+}
+
+
+/* Newsletter */
+#newsletter{
+    padding:15px;
+    color:#ffffff;
+    background: #7a4446;
+}
+
+#newsletter h1{
+    float:left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top:10px;
+}
+
+#newsletter input[type="email"]{
+    padding:5px;
+    height:25px;
+    width: 250px;
+}
+
+#boxes{
+    margin-top:20px;
+}
+
+#boxes .box{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width:180px;
+    height:180px;
+    border-radius: 15px;
+}
+
+/* Sidebar */
+aside#sidebar{
+    float:left;
+    width:30%;
+    margin-top:10px;
+}
+
+aside#sidebar .booking input, aside#sidebar .booking textarea, aside#sidebar .booking select{
+    width: 90%;
+    padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+    float:right;
+    width:65%;
+}
+
+/* Services */
+ul#services li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 2px;
+    margin-bottom: 5px;
+    background-color: #9fa1a5;  
+
+}
+
+
+/* Footer */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #d8171b;
+    text-align: center;
+}
+
+@media only screen and (max-width:600px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase{
+        max-height:200px;
+        overflow: hidden;
+    }
+
+    #showcase h1{
+        margin-top:40px;
+        font-size:30px;
+    }
+    
+    #showcase p{
+        font-size:14px;
+    }
+
+    #newsletter button, .booking:button{
+        display:block;
+        width:100%;
+    }
+
+    #newsletter form input[type="email"],  .booking input, .booking textarea, .booking select{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top:40px;
+    }
+
+    #newsletter button, .booking:button{
+        display:block;
+        width:100%;
+    }
+
+    #newsletter form input[type="email"], .booking input, .booking textarea, .booking select{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}
